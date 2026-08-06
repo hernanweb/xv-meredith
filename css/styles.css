@@ -114,7 +114,7 @@ img { max-width: 100%; display: block; }
 .reveal.visible { opacity: 1; transform: none; }
 
 /* ============ PANTALLA DE BIENVENIDA (SOBRE) ============ */
-#welcome {
+/*#welcome {
   min-height: 100svh;
   width: 100%;
   display: grid;
@@ -127,12 +127,25 @@ img { max-width: 100%; display: block; }
     url('../assets/images/welcome-bg.jpg');
   background-size: cover;
   background-position: center;
+} */
+
+
+#welcome {
+  min-height: 100svh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  padding: 12px;
+  position: relative;
+  overflow: hidden;
+  background-color: #9faa93; /* verde olivo tenue */
 }
 
 .welcome-stage {
-  width: min(96vw, 680px);
-  height: min(96vw, 600px);
+  width: min(100%, 680px);
+  height: min(100vw, 600px);
   min-height: 340px;
+  margin: 0 auto;
   position: relative;
   display: grid;
   place-items: center;
