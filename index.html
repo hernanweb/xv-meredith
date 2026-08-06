@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>XV Años · Meredith Carrera Guachamín</title>
+  <meta name="description" content="Invitación a los XV años de Meredith Carrera Guachamín — 26 de septiembre de 2026">
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Iconos (ligero, ~15kb) -->
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js" defer></script>
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ============ PANTALLA DE BIENVENIDA (SOBRE) ============ -->
+  <section id="welcome" aria-label="Apertura de invitación">
+    <div id="welcomeStage" class="welcome-stage">
+      <img id="envelopeClosed" class="welcome-envelope" src="assets/images/sobre-cerrado.png"
+           alt="Sobre verde salvia cerrado con flores rosadas">
+      <img id="envelopeOpen" class="welcome-open-envelope" src="assets/images/sobre-abierto.png"
+           alt="Sobre verde salvia abierto con flores rosadas">
+      <img id="letter" class="welcome-letter" src="assets/images/sobre-abierto.png"
+           alt="Invitación de Meredith saliendo del sobre">
+      <button id="sealButton" class="seal-control" type="button" aria-label="Abrir invitación con el sello">
+        <img src="assets/images/sello.png" alt="Sello de cera con la inicial M">
+      </button>
+    </div>
+  </section>
+
+  <!-- ============ INVITACIÓN ============ -->
+  <div id="invitation" class="invite-shell">
+
+    <!-- HERO -->
+    <header class="hero">
+      <img class="hero-photo" src="assets/images/hero-foto.jpg" alt="Meredith con vestido verde salvia">
+      <div class="hero-overlay"></div>
+      <img class="botanical botanical--left" src="https://images.pexels.com/photos/5176378/pexels-photo-5176378.png" alt="">
+      <img class="botanical botanical--right" src="https://images.pexels.com/photos/5176378/pexels-photo-5176378.png" alt="">
+      <div class="hero-content">
+        <p class="eyebrow">Te invito a celebrar conmigo</p>
+        <div class="gold-rule" aria-hidden="true"><span class="line"></span><span>✦</span><span class="line"></span></div>
+        <h1 class="hero-name">Meredith Carrera Guachamín</h1>
+        <p class="hero-date">Sábado 26 de septiembre, 2026</p>
+        <p class="hero-time">19:30 hs</p>
+      </div>
+    </header>
+
+    <main>
+
+      <!-- CONTADOR -->
+      <section class="section section--countdown reveal">
+        <img class="leaf leaf--top-right" src="https://images.pexels.com/photos/1454794/pexels-photo-1454794.jpeg" alt="">
+        <p class="eyebrow eyebrow--center">Faltan</p>
+        <h2 class="section-title">para celebrar juntos</h2>
+        <div class="countdown">
+          <div class="count-box"><strong id="days">00</strong><span>Días</span></div>
+          <div class="count-box"><strong id="hours">00</strong><span>Horas</span></div>
+          <div class="count-box"><strong id="minutes">00</strong><span>Minutos</span></div>
+          <div class="count-box"><strong id="seconds">00</strong><span>Segundos</span></div>
+        </div>
+      </section>
+
+      <!-- EVENTO / UBICACIÓN -->
+      <section class="section reveal">
+        <div class="card card--center">
+          <img class="leaf leaf--top-left" src="https://images.pexels.com/photos/5176378/pexels-photo-5176378.png" alt="">
+          <p class="eyebrow">La celebración</p>
+          <h2 class="section-title">Mi Noche Especial</h2>
+          <div class="card-body">
+            <p class="text-lg">Sábado 26 de septiembre, 2026 · 19:30 hs</p>
+            <div class="divider"></div>
+            <p class="text-lg">Club Social, Urb. Nápoli · Vía a Salitre</p>
+            <a class="btn btn--primary" href="https://maps.app.goo.gl/67zAdcH9EFELeN6eA" target="_blank" rel="noopener noreferrer">
+              <i data-lucide="map-pin"></i><span>Cómo llegar</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- CRONOGRAMA -->
+      <section class="section reveal">
+        <div class="section-head">
+          <p class="eyebrow">Momentos de la noche</p>
+          <h2 class="section-title">Cronograma</h2>
+        </div>
+        <div class="schedule-grid">
+          <article class="card card--schedule">
+            <i data-lucide="sparkles"></i>
+            <h3>Llegada de Invitados</h3>
+            <p class="time">19:30 hs</p>
+          </article>
+          <article class="card card--schedule">
+            <i data-lucide="heart"></i>
+            <h3>Ingreso Quinceañera</h3>
+            <p class="time">20:00 hs</p>
+          </article>
+          <article class="card card--schedule">
+            <i data-lucide="utensils"></i>
+            <h3>Cena</h3>
+            <p class="time">21:00 hs</p>
+          </article>
+          <article class="card card--schedule">
+            <i data-lucide="music-2"></i>
+            <h3>Celebración</h3>
+            <p class="time">22:00 hs</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- DRESS CODE -->
+      <section class="section reveal">
+        <div class="card card--center card--muted">
+          <div class="gold-rule" aria-hidden="true"><span class="line"></span><span>❦</span><span class="line"></span></div>
+          <p class="eyebrow">Dress code</p>
+          <h2 class="section-title">Formal</h2>
+          <p class="note">El color verde está reservado para la quinceañera</p>
+        </div>
+      </section>
+
+      <!-- HISTORIA -->
+      <section class="section reveal">
+        <div class="card card--center">
+          <p class="eyebrow">Mis XV</p>
+          <h2 class="section-title">Un nuevo capítulo</h2>
+          <p class="text-lg">Los sueños comienzan a hacerse realidad y una nueva etapa está por empezar. Quiero celebrar este día inolvidable junto a las personas que iluminan mi camino y guardan un lugar especial en mi corazón.</p>
+        </div>
+      </section>
+
+      <!-- RSVP -->
+      <section class="section reveal">
+        <div class="gold-rule" aria-hidden="true"><span class="line"></span><span>❦</span><span class="line"></span></div>
+        <div class="card card--center">
+          <p class="eyebrow">Reservamos este momento para ti</p>
+          <h2 class="section-title">Nos encantaría que vinieras</h2>
+          <p class="text-lg">Por favor confirma hasta el 1 de septiembre de 2026.</p>
+          <a class="btn btn--dark" href="https://wa.link/q5ws5k" target="_blank" rel="noopener noreferrer">
+            <i data-lucide="message-circle"></i><span>Confirmar por WhatsApp</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- MESA DE REGALOS -->
+      <section class="section reveal">
+        <div class="gold-rule" aria-hidden="true"><span class="line"></span><span>❦</span><span class="line"></span></div>
+        <div class="card card--center card--tint">
+          <p class="eyebrow">Mesa de regalos</p>
+          <h2 class="section-title">Con cariño</h2>
+          <p class="text-lg">Tu presencia será nuestro mejor regalo, pero si deseas acompañarnos con un obsequio, puedes hacerlo en sobre cerrado o con los siguientes datos.</p>
+          <div class="gift-details">
+            <p class="gift-line gift-line--bold">Titular: María José Guachamín Montaño</p>
+            <p class="gift-line">Banco Guayaquil</p>
+            <div class="account-box">
+              <p id="accountDisplay">Cuenta Ahorros #: 0032043572</p>
+              <button id="copyAccountBtn" type="button" aria-label="Copiar número de cuenta">
+                <i data-lucide="copy"></i>
+              </button>
+            </div>
+            <p id="copyFeedback" class="copy-feedback" aria-live="polite"></p>
+            <p class="gift-line">Correo: mariajogmontano@outlook.es</p>
+            <p class="gift-line">CI: 0803024884</p>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <img class="leaf leaf--footer-left" src="https://images.pexels.com/photos/5176378/pexels-photo-5176378.png" alt="">
+      <img class="leaf leaf--footer-right" src="https://images.pexels.com/photos/5176378/pexels-photo-5176378.png" alt="">
+      <p class="footer-message">Gracias por acompañarnos en este día tan especial.</p>
+      <p class="footer-signature">XV AÑOS · MEREDITH</p>
+    </footer>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
