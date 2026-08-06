@@ -18,16 +18,24 @@
   --color-text-on-dark: #f5f0e8;
 
   /* ---- Tipografías ---- */
-  --font-display: 'Cinzel', serif;         /* títulos pequeños en mayúsculas */
-  --font-body: 'Cormorant Garamond', serif; /* texto principal */
-  --font-sans: 'Montserrat', sans-serif;    /* botones, etiquetas */
+
+ /*--font-display: 'Cinzel', serif;   */       /* títulos pequeños en mayúsculas */
+  /*--font-body: 'Cormorant Garamond', serif; */ /* texto principal */
+  /*--font-sans: 'Montserrat', sans-serif;  */   /* botones, etiquetas */
+
+
+--font-display: 'DM Serif Display', serif;
+--font-body: 'Cormorant Garamond', serif;
+--font-sans: 'Manrope', sans-serif;
+
+
 
   /* ---- Tamaños de letra (se adaptan solas al tamaño de pantalla) ---- */
   --fs-hero-name: clamp(2.2rem, 8vw, 3.4rem);
-  --fs-section-title: clamp(1.7rem, 5vw, 2.3rem);
+  --fs-section-title: clamp(0.90rem, 5vw, 2.3rem);
   --fs-eyebrow: 0.95rem;
-  --fs-body: clamp(1.05rem, 4vw, 1.2rem);
-  --fs-small: 0.9rem;
+  --fs-body: clamp(0.95rem, 4vw, 1.2rem);
+  --fs-small: 0.70rem;
   --fs-button: 0.68rem;
   --fs-counter: clamp(1.8rem, 7vw, 2.6rem);
 
@@ -43,7 +51,7 @@
 html { scroll-behavior: smooth; }
 
 body {
-  font-family: var(--font-body);
+  font-family: var(--font-sans);  
   color: var(--color-ink);
   background: var(--color-ivory);
   background-image:
@@ -67,15 +75,49 @@ img { max-width: 100%; display: block; }
 }
 .eyebrow--center { text-align: center; }
 
-.section-title {
+/*.section-title {
   font-style: italic;
   font-weight: 600;
   font-size: var(--fs-section-title);
   color: var(--color-ink);
   margin-bottom: 1rem;
+}*/
+
+
+
+
+
+.section-title {
+  font-style: italic;
+  font-weight: 600;
+  font-size: var(--fs-section-title);
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, #8a6a1f 0%, #d9b24c 22%, #ab934f 48%, #d9b24c 72%, #8a6a1f 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: #c79e31;
+  -webkit-text-fill-color: transparent;
 }
 
-.text-lg { font-size: 1.3rem; color: var(--color-ink); }
+.section-subtitle {
+    font-family: var(--font-body);
+    font-style: italic;
+    font-size: var(--fs-hero-name);
+  font-weight: 700;
+  font-size: var(--fs-section-title);
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, #8a6a1f 0%, #d9b24c 22%, #ab934f 48%, #d9b24c 72%, #8a6a1f 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: #c79e31;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+
+
+.text-lg { font-size: 1rem; color: var(--color-ink); }
 
 .note {
   font-family: var(--font-sans);
@@ -224,7 +266,7 @@ img { max-width: 100%; display: block; }
   position: absolute;
   inset: 0;
   top: 0;
-  background-image: url('../assets/images/welcome-bg.jpg');
+  background-image: url('../assets/images/flowers1.jpg');
   background-size: 100% auto;
   background-position: top center;
   background-repeat: repeat-y;
@@ -259,7 +301,21 @@ img { max-width: 100%; display: block; }
 }
 .hero-content { position: relative; z-index: 2; max-width: 32rem; }
 .hero-content .eyebrow { color: var(--color-text-on-dark); font-size: 1.1rem; }
-.hero-name { font-family: var(--font-body); font-style: italic; font-weight: 600; color: var(--color-text-on-dark); font-size: var(--fs-hero-name); line-height: 0.95; }
+
+
+
+/*.hero-name { font-family: var(--font-body); font-style: italic; font-weight: 600; color: var(--color-text-on-dark); font-size: var(--fs-hero-name); line-height: 0.95; }*/
+
+
+.hero-name { font-family: var(--font-body); font-style: italic; font-weight: 600; background: linear-gradient(135deg, #8a6a1f 0%, #d9b24c 22%, #f7e3ab 48%, #d9b24c 72%, #8a6a1f 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: #c79e31;
+  -webkit-text-fill-color: transparent; font-size: var(--fs-hero-name); line-height: 0.95; }
+
+
+
+
 .hero-date { font-family: var(--font-sans); text-transform: uppercase; letter-spacing: 0.15em; color: var(--color-text-on-dark); margin-top: 2rem; font-size: 1.1rem; font-weight: 600; }
 .hero-time { font-family: var(--font-sans); letter-spacing: 0.13em; color: var(--color-text-on-dark); margin-top: 0.4rem; }
 
@@ -326,14 +382,14 @@ img { max-width: 100%; display: block; }
 
 /* ---- Mesa de regalos ---- */
 .gift-details { margin-top: 1.5rem; text-align: left; width: 100%; }
-.gift-line { font-size: clamp(1.15rem, 4.5vw, 1.35rem); margin-top: 0.7rem; word-break: break-word; font-weight: 700; }
+.gift-line { font-size: clamp(0.90rem, 4.5vw, 0.95rem); margin-top: 0.7rem; word-break: break-word; font-weight: 700; }
 .gift-line--bold { font-weight: 700; }
 .account-box {
   margin-top: 1rem; padding: 1rem; border: 1px solid var(--color-gold);
   border-radius: var(--radius); background: rgba(255,255,255,0.5);
   display: flex; align-items: center; justify-content: space-between; gap: 0.75rem;
 }
-.account-box p { font-family: var(--font-sans); font-size: 0.75rem; word-break: break-all; }
+.account-box p { font-family: var(--font-sans); font-size: 0.95rem; word-break: break-all; }
 .account-box button { background: none; border: none; cursor: pointer; padding: 0.4rem; border-radius: 4px; }
 .account-box button:hover { background: rgba(182, 154, 99, 0.1); }
 .account-box i { color: var(--color-gold); width: 18px; height: 18px; }
@@ -341,9 +397,31 @@ img { max-width: 100%; display: block; }
 .copy-feedback.show { opacity: 1; }
 
 /* ============ FOOTER ============ */
-.footer { position: relative; text-align: center; padding: 4rem 1.25rem; background: var(--color-ivory); overflow: hidden; }
-.footer-message { font-style: italic; font-weight: 600; font-size: 1.1rem; color: var(--color-ink); position: relative; }
-.footer-signature { font-family: var(--font-display); letter-spacing: 0.13em; color: var(--color-sage); margin-top: 1rem; font-weight: 600; font-size: 1rem; position: relative; }
+
+.footer {
+  position: relative; text-align: center; padding: 4rem 1.25rem; overflow: hidden;
+  background-image: linear-gradient(rgba(250,247,239,0.55), rgba(250,247,239,0.7)), url('../assets/images/flowers1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+
+.footer-message { 
+  font-style: italic; 
+  font-weight: 600; 
+  font-size: 1.1rem; 
+  color: var(--color-ink); 
+  position: relative; }
+
+.footer-signature { 
+  font-family: var(--font-display); 
+  letter-spacing: 0.13em; 
+  color: var(--color-sage); 
+  margin-top: 1rem; 
+  font-weight: 600; 
+  font-size: 1rem;
+  position: relative; }
+
 
 /* Accesibilidad: foco visible */
 button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible {
