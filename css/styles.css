@@ -140,7 +140,7 @@ img { max-width: 100%; display: block; }
   overflow: hidden;
   background-color: #dde2d5;
   background-image: 
-    url('../assets/images/welcome-bg.jpg');
+    url('../assets/images/welcome-bg.jpeg');
   background-size: cover;
   background-position: center;
 }
