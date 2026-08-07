@@ -404,14 +404,14 @@ img { max-width: 100%; display: block; }
 
 /* ---- Mesa de regalos ---- */
 .gift-details { margin-top: 1.5rem; text-align: left; width: 100%; }
-.gift-line { font-size: clamp(0.90rem, 4.5vw, 0.95rem); margin-top: 0.7rem; word-break: break-word; font-weight: 700; }
+.gift-line { font-size: clamp( 0.70rem, 4.5vw, 0.85rem); margin-top: 0.7rem; word-break: break-word; font-weight: 700; }
 .gift-line--bold { font-weight: 700; }
 .account-box {
   margin-top: 1rem; padding: 1rem; border: 1px solid var(--color-gold);
   border-radius: var(--radius); background: rgba(255,255,255,0.5);
   display: flex; align-items: center; justify-content: space-between; gap: 0.75rem;
 }
-.account-box p { font-family: var(--font-sans); font-size: 0.95rem; word-break: break-all; }
+.account-box p { font-family: var(--font-sans); font-size: 0.85rem; word-break: break-all; }
 .account-box button { background: none; border: none; cursor: pointer; padding: 0.4rem; border-radius: 4px; }
 .account-box button:hover { background: rgba(182, 154, 99, 0.1); }
 .account-box i { color: var(--color-gold); width: 18px; height: 18px; }
