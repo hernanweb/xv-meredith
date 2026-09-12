@@ -402,6 +402,12 @@ img { max-width: 100%; display: block; }
 .card--schedule svg, .card--schedule i { color: var(--color-gold); margin: 0 auto 0.8rem; width: 22px; }
 .card--schedule h3 { font-style: italic; font-weight: 600; font-size: 1.1rem; line-height: 1.25; color: var(--color-ink); }
 .card--schedule .time { font-family: var(--font-sans); color: var(--color-sage); margin-top: 0.4rem; font-weight: 600; font-size: 0.95rem; }
+.card--full {
+  grid-column: 1 / -1;
+  height: auto;
+  min-height: 140px;
+  padding: 1.3rem 1.5rem;
+}
 
 /* ---- Botones ---- */
 
